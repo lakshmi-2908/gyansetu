@@ -1,0 +1,6 @@
+{
+  "name": "GyanSetu",
+  "description": "Grounded, bilingual NCERT AI education platform (Classes 6–12) with citation doubt-solving, adaptive practice & conceptual maps, teacher analytics, and scholarship matching.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

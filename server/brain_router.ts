@@ -1,7 +1,7 @@
 import { GoogleGenAI } from "@google/genai";
-import type { KBChunk } from "./types.ts";
+import { KBChunk } from "./kb_index";
 
-interface BrainMessage {
+export interface BrainMessage {
   role: "system" | "user" | "assistant";
   content: string;
 }
@@ -45,15 +45,14 @@ async function callOpenRouter(
 
   const customModel = process.env.OPENROUTER_MODEL?.trim();
 
-  // Reliable free & fast models pool on OpenRouter (with custom model prioritized first if provided)
+  // Active free & fast models pool on OpenRouter (with custom model prioritized first if provided)
   const candidateModels = [
     customModel,
-    "google/gemini-2.0-flash-exp:free",
+    "nvidia/nemotron-3-ultra-550b-a55b:free",
+    "google/gemma-4-31b-it:free",
+    "openai/gpt-oss-20b:free",
     "meta-llama/llama-3.3-70b-instruct:free",
-    "mistralai/mistral-small-24b-instruct-2501:free",
-    "qwen/qwen-2.5-72b-instruct:free",
-    "deepseek/deepseek-r1:free",
-    "deepseek/deepseek-chat:free"
+    "openrouter/free"
   ].filter(Boolean) as string[];
 
   // Deduplicate candidate models
@@ -144,11 +143,11 @@ async function callGemini(
 
   // Use supported Gemini models according to @google/genai SDK
   const candidateModels = [
-    "gemini-2.5-flash",
-    "gemini-2.5-flash-lite",
-    "gemini-3.7-flash",
-    "gemini-flash-latest",
-    "gemini-3.1-pro-preview"
+    "gemini-3.6-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.5-flash",
+    "gemini-3.1-flash-lite",
+    "gemini-2.5-pro"
   ];
   let lastErr: any = null;
 

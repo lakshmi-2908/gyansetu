@@ -12,7 +12,7 @@
 
 | | |
 |---|---|
-| 🚀 **Live Prototype** | `[ADD LIVE / HOSTED URL HERE]` |
+| 🚀 **Live Prototype** | `[https://gyansetu-trlu.onrender.com]` |
 | 🎥 **Demo Video** | `[ADD DEMO VIDEO LINK HERE — YouTube / Drive / Loom]` |
 | 📂 **GitHub Repo** | `[ADD REPO URL HERE]` |
 | 👥 **Team** | `[ARCHITECTS IN CHAOS, A.LAKSHMI KANTHAM,N.GEETHIKA ]` |

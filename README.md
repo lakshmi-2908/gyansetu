@@ -13,7 +13,7 @@
 | | |
 |---|---|
 | 🚀 **Live Prototype** | `[https://gyansetu-trlu.onrender.com]` |
-| 🎥 **Demo Video** | `[ADD DEMO VIDEO LINK HERE — YouTube / Drive / Loom]` |
+| 🎥 **Demo Video** | `[https://youtu.be/sTn8J3g0q_w]` |
 | 📂 **GitHub Repo** | `[https://github.com/lakshmi-2908/gyansetu]` |
 | 👥 **Team** | `[ARCHITECTS IN CHAOS, A.LAKSHMI KANTHAM,N.GEETHIKA ]` |
 | 📋 **Problem Statement** | `[AI for Equitable Education Access]` |
